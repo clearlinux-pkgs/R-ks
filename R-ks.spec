@@ -4,18 +4,13 @@
 #
 Name     : R-ks
 Version  : 1.11.4
-Release  : 8
+Release  : 9
 URL      : https://cran.r-project.org/src/contrib/ks_1.11.4.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/ks_1.11.4.tar.gz
 Summary  : Kernel Smoothing
 Group    : Development/Tools
 License  : GPL-2.0 GPL-3.0
 Requires: R-ks-lib = %{version}-%{release}
-Requires: R-FNN
-Requires: R-kernlab
-Requires: R-mclust
-Requires: R-multicool
-Requires: R-mvtnorm
 BuildRequires : R-FNN
 BuildRequires : R-kernlab
 BuildRequires : R-mclust
@@ -42,10 +37,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1550721062
+export SOURCE_DATE_EPOCH=1552834597
 
 %install
-export SOURCE_DATE_EPOCH=1550721062
+export SOURCE_DATE_EPOCH=1552834597
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -81,8 +76,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library ks|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  ks || :
 
 
 %files
@@ -121,7 +115,6 @@ cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
 /usr/lib64/R/library/ks/help/paths.rds
 /usr/lib64/R/library/ks/html/00Index.html
 /usr/lib64/R/library/ks/html/R.css
-/usr/lib64/R/library/ks/libs/symbols.rds
 
 %files lib
 %defattr(-,root,root,-)
