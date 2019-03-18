@@ -4,7 +4,7 @@
 #
 Name     : R-ks
 Version  : 1.11.4
-Release  : 10
+Release  : 11
 URL      : https://cran.r-project.org/src/contrib/ks_1.11.4.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/ks_1.11.4.tar.gz
 Summary  : Kernel Smoothing
@@ -37,10 +37,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552834597
+export SOURCE_DATE_EPOCH=1552890512
 
 %install
-export SOURCE_DATE_EPOCH=1552834597
+export SOURCE_DATE_EPOCH=1552890512
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
