@@ -4,7 +4,7 @@
 #
 Name     : R-ks
 Version  : 1.11.4
-Release  : 14
+Release  : 15
 URL      : https://cran.r-project.org/src/contrib/ks_1.11.4.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/ks_1.11.4.tar.gz
 Summary  : Kernel Smoothing
@@ -37,10 +37,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552961316
+export SOURCE_DATE_EPOCH=1556460849
 
 %install
-export SOURCE_DATE_EPOCH=1552961316
+export SOURCE_DATE_EPOCH=1556460849
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -76,7 +76,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc  ks || :
+R CMD check --no-manual --no-examples --no-codoc ks || :
 
 
 %files
@@ -120,4 +120,3 @@ R CMD check --no-manual --no-examples --no-codoc  ks || :
 %defattr(-,root,root,-)
 /usr/lib64/R/library/ks/libs/ks.so
 /usr/lib64/R/library/ks/libs/ks.so.avx2
-/usr/lib64/R/library/ks/libs/ks.so.avx512
