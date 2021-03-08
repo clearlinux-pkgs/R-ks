@@ -4,7 +4,7 @@
 #
 Name     : R-ks
 Version  : 1.12.0
-Release  : 28
+Release  : 29
 URL      : https://cran.r-project.org/src/contrib/ks_1.12.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/ks_1.12.0.tar.gz
 Summary  : Kernel Smoothing
@@ -16,6 +16,7 @@ Requires: R-kernlab
 Requires: R-mclust
 Requires: R-multicool
 Requires: R-mvtnorm
+Requires: R-plot3D
 BuildRequires : R-FNN
 BuildRequires : R-kernlab
 BuildRequires : R-mclust
@@ -44,10 +45,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1615232270
+export SOURCE_DATE_EPOCH=1615232121
 
 %install
-export SOURCE_DATE_EPOCH=1615232270
+export SOURCE_DATE_EPOCH=1615232121
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
