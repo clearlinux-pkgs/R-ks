@@ -5,7 +5,7 @@
 #
 Name     : R-ks
 Version  : 1.14.1
-Release  : 57
+Release  : 58
 URL      : https://cran.r-project.org/src/contrib/ks_1.14.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/ks_1.14.1.tar.gz
 Summary  : Kernel Smoothing
