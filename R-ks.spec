@@ -6,10 +6,10 @@
 # autospec commit: 9594167
 #
 Name     : R-ks
-Version  : 1.15.0
-Release  : 63
-URL      : https://ftp.osuosl.org/pub/cran/src/contrib/ks_1.15.0.tar.gz
-Source0  : https://ftp.osuosl.org/pub/cran/src/contrib/ks_1.15.0.tar.gz
+Version  : 1.15.1
+Release  : 64
+URL      : https://ftp.osuosl.org/pub/cran/src/contrib/ks_1.15.1.tar.gz
+Source0  : https://ftp.osuosl.org/pub/cran/src/contrib/ks_1.15.1.tar.gz
 Summary  : Kernel Smoothing
 Group    : Development/Tools
 License  : GPL-2.0 GPL-3.0
@@ -56,10 +56,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1746043091
+export SOURCE_DATE_EPOCH=1746455401
 
 %install
-export SOURCE_DATE_EPOCH=1746043091
+export SOURCE_DATE_EPOCH=1746455401
 rm -rf %{buildroot}
 LANG=C.UTF-8
 CFLAGS="$CLEAR_INTERMEDIATE_CFLAGS -O3 -flto -fno-semantic-interposition "
